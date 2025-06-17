@@ -4,40 +4,39 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentReporter;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
+
 public class ITestListeners implements ITestListener {
+	ExtentSparkReporter Sparkreport;
+	ExtentReporter extendReport;
+	ExtentTest test;
 
 	@Override
 	public void onStart(ITestContext context) {
-		System.out.println("Test Suite started: " + context.getName());
+
+		System.out.println("Start :" + context.getName());
 	}
 
 	@Override
 	public void onFinish(ITestContext context) {
-		System.out.println("Test Suite finished: " + context.getName());
-	}
-
-	@Override
-	public void onTestStart(ITestResult result) {
-		System.out.println("Test started: " + result.getName());
-	}
-
-	@Override
-	public void onTestSuccess(ITestResult result) {
-		System.out.println("Test passed: " + result.getName());
-	}
-
-	@Override
-	public void onTestFailure(ITestResult result) {
-		System.out.println("Test failed: " + result.getName());
+		System.out.println("Finish :" + context.getName());
 	}
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		System.out.println("Test skipped: " + result.getName());
+		System.out.println("Test is Skp :" + result.getName());
 	}
 
 	@Override
-	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-		System.out.println("Test failed but within success percentage: " + result.getName());
+	public void onTestSuccess(ITestResult result) {
+		System.out.println("Test is Pass :" + result.getName());
+	}
+
+	@Override
+	public void onTestFailure(ITestResult result) {
+		System.out.println("Test is Fail :" + result.getName());
 	}
 }
