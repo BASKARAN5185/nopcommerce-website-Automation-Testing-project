@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-16T18:48:51 IST" name="Default suite" finished-at="2025-06-16T18:49:23 IST" duration-ms="32367">
+    <groups>
+    </groups>
+    <test started-at="2025-06-16T18:48:51 IST" name="Default test" finished-at="2025-06-16T18:49:23 IST" duration-ms="32367">
+      <class name="pageTestClass.LoginPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:pageTestClass.LoginPageTest@58d75e99]" started-at="2025-06-16T18:48:51 IST" name="setup" finished-at="2025-06-16T18:49:00 IST" duration-ms="8429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidUsername()[pri:1, instance:pageTestClass.LoginPageTest@58d75e99]" started-at="2025-06-16T18:49:00 IST" name="invalidUsername" finished-at="2025-06-16T18:49:01 IST" duration-ms="1670" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidUsername -->
+        <test-method signature="invalidpassword()[pri:2, instance:pageTestClass.LoginPageTest@58d75e99]" started-at="2025-06-16T18:49:02 IST" name="invalidpassword" finished-at="2025-06-16T18:49:02 IST" duration-ms="750" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidpassword -->
+        <test-method signature="emptyusername()[pri:3, instance:pageTestClass.LoginPageTest@58d75e99]" started-at="2025-06-16T18:49:02 IST" name="emptyusername" finished-at="2025-06-16T18:49:03 IST" duration-ms="751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyusername -->
+        <test-method signature="emptypassword()[pri:4, instance:pageTestClass.LoginPageTest@58d75e99]" started-at="2025-06-16T18:49:03 IST" name="emptypassword" finished-at="2025-06-16T18:49:04 IST" duration-ms="662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptypassword -->
+        <test-method signature="emptyusernameandpassword()[pri:5, instance:pageTestClass.LoginPageTest@58d75e99]" started-at="2025-06-16T18:49:04 IST" name="emptyusernameandpassword" finished-at="2025-06-16T18:49:04 IST" duration-ms="586" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyusernameandpassword -->
+        <test-method signature="UsernameandpasswordCaseSensitive()[pri:6, instance:pageTestClass.LoginPageTest@58d75e99]" started-at="2025-06-16T18:49:04 IST" name="UsernameandpasswordCaseSensitive" finished-at="2025-06-16T18:49:05 IST" duration-ms="693" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UsernameandpasswordCaseSensitive -->
+        <test-method signature="SqlInjection()[pri:7, instance:pageTestClass.LoginPageTest@58d75e99]" started-at="2025-06-16T18:49:05 IST" name="SqlInjection" finished-at="2025-06-16T18:49:06 IST" duration-ms="735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SqlInjection -->
+        <test-method signature="vaildCredentials()[pri:8, instance:pageTestClass.LoginPageTest@58d75e99]" started-at="2025-06-16T18:49:06 IST" name="vaildCredentials" finished-at="2025-06-16T18:49:06 IST" duration-ms="723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vaildCredentials -->
+        <test-method signature="LodingPagetime()[pri:9, instance:pageTestClass.LoginPageTest@58d75e99]" started-at="2025-06-16T18:49:06 IST" name="LodingPagetime" finished-at="2025-06-16T18:49:11 IST" duration-ms="5027" status="FAIL">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method pageTestClass.LoginPageTest.LodingPagetime() didn't finish within the time-out 5000]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method pageTestClass.LoginPageTest.LodingPagetime() didn't finish within the time-out 5000
+at java.base/jdk.internal.misc.Unsafe.park(Native Method)
+at java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+at java.base/java.util.concurrent.CompletableFuture$Signaller.block(CompletableFuture.java:1910)
+at java.base/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:4021)
+at java.base/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3967)
+at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1983)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2139)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:382)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:355)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at pageObjectModel.LoginPage.loginbuttondisplayed(LoginPage.java:37)
+at pageTestClass.LoginPageTest.LodingPagetime(LoginPageTest.java:73)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LodingPagetime -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:pageTestClass.LoginPageTest@58d75e99]" started-at="2025-06-16T18:49:12 IST" name="teardown" finished-at="2025-06-16T18:49:23 IST" duration-ms="11917" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- pageTestClass.LoginPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
