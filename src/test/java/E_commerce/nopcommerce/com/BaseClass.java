@@ -2,6 +2,7 @@ package E_commerce.nopcommerce.com;
 
 import java.time.Duration;
 
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
@@ -24,6 +25,11 @@ public class BaseClass {
 	public void teardown() {
 
 		driver.quit();
+	}
+
+	public static TakesScreenshot driver() {
+		// TODO Auto-generated method stub
+		return driver;
 	}
 
 }
