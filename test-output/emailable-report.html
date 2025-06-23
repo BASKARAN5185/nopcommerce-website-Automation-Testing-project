@@ -8,12 +8,12 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">31,940</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">28,976</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">pageTestClass.LoginPageTest</td><td><a href="#m0">LodingPagetime</a></td><td rowspan="1">1750231656009</td><td rowspan="1">5018</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="8">pageTestClass.LoginPageTest</td><td><a href="#m1">SqlInjection</a></td><td rowspan="1">1750231654625</td><td rowspan="1">681</td></tr><tr class="passedeven"><td><a href="#m2">UsernameandpasswordCaseSensitive</a></td><td rowspan="1">1750231653868</td><td rowspan="1">750</td></tr><tr class="passedeven"><td><a href="#m3">emptypassword</a></td><td rowspan="1">1750231652599</td><td rowspan="1">621</td></tr><tr class="passedeven"><td><a href="#m4">emptyusername</a></td><td rowspan="1">1750231651952</td><td rowspan="1">639</td></tr><tr class="passedeven"><td><a href="#m5">emptyusernameandpassword</a></td><td rowspan="1">1750231653228</td><td rowspan="1">631</td></tr><tr class="passedeven"><td><a href="#m6">invalidUsername</a></td><td rowspan="1">1750231649242</td><td rowspan="1">1952</td></tr><tr class="passedeven"><td><a href="#m7">invalidpassword</a></td><td rowspan="1">1750231651210</td><td rowspan="1">731</td></tr><tr class="passedeven"><td><a href="#m8">vaildCredentials</a></td><td rowspan="1">1750231655320</td><td rowspan="1">683</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">pageTestClass.LoginPageTest</td><td><a href="#m0">LodingPagetime</a></td><td rowspan="1">1750693399046</td><td rowspan="1">5026</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="8">pageTestClass.LoginPageTest</td><td><a href="#m1">SqlInjection</a></td><td rowspan="1">1750693397410</td><td rowspan="1">706</td></tr><tr class="passedeven"><td><a href="#m2">UsernameandpasswordCaseSensitive</a></td><td rowspan="1">1750693396740</td><td rowspan="1">664</td></tr><tr class="passedeven"><td><a href="#m3">emptypassword</a></td><td rowspan="1">1750693395634</td><td rowspan="1">550</td></tr><tr class="passedeven"><td><a href="#m4">emptyusername</a></td><td rowspan="1">1750693394960</td><td rowspan="1">667</td></tr><tr class="passedeven"><td><a href="#m5">emptyusernameandpassword</a></td><td rowspan="1">1750693396189</td><td rowspan="1">546</td></tr><tr class="passedeven"><td><a href="#m6">invalidUsername</a></td><td rowspan="1">1750693392585</td><td rowspan="1">1705</td></tr><tr class="passedeven"><td><a href="#m7">invalidpassword</a></td><td rowspan="1">1750693394309</td><td rowspan="1">645</td></tr><tr class="passedeven"><td><a href="#m8">vaildCredentials</a></td><td rowspan="1">1750693398125</td><td rowspan="1">914</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">pageTestClass.LoginPageTest#LodingPagetime</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.internal.thread.ThreadTimeoutException: Method pageTestClass.LoginPageTest.LodingPagetime() didn&apos;t finish within the time-out 5000
+<h2>Default test</h2><h3 id="m0">pageTestClass.LoginPageTest#LodingPagetime</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.internal.thread.ThreadTimeoutException: Method pageTestClass.LoginPageTest.LodingPagetime() didn&apos;t finish within the time-out 5000
 	at java.base/jdk.internal.misc.Unsafe.park(Native Method)
 	at java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
 	at java.base/java.util.concurrent.CompletableFuture$Signaller.block(CompletableFuture.java:1910)
@@ -33,13 +33,19 @@
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at pageObjectModel.LoginPage.loginbuttondisplayed(LoginPage.java:37)
+	at pageObjectModel.LoginPage.loginbuttondisplayed(LoginPage.java:36)
 	at pageTestClass.LoginPageTest.LodingPagetime(LoginPageTest.java:73)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1575)
-... Removed 6 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">pageTestClass.LoginPageTest#SqlInjection</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">pageTestClass.LoginPageTest#UsernameandpasswordCaseSensitive</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">pageTestClass.LoginPageTest#emptypassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>

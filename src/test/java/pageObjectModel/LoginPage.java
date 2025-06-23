@@ -18,8 +18,7 @@ public class LoginPage extends BaseClass {
 	By loginbutton = By.xpath("//*[@id=\"main\"]/div/div/div/div[2]/div[1]/div[2]/form/div[3]/button");
 
 	// elements Action Methods
-
-	public void Username(String name) {
+    public void Username(String name) {
 		driver.findElement(username).clear();
 		driver.findElement(username).sendKeys(name);
 	}

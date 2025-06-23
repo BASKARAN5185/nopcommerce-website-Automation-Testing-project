@@ -2,48 +2,48 @@
 <testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-18T12:57:22 IST" name="Suite" finished-at="2025-06-18T12:57:54 IST" duration-ms="31940">
+  <suite started-at="2025-06-23T21:13:06 IST" name="Default suite" finished-at="2025-06-23T21:13:35 IST" duration-ms="28976">
     <groups>
     </groups>
-    <test started-at="2025-06-18T12:57:22 IST" name="Test" finished-at="2025-06-18T12:57:54 IST" duration-ms="31940">
+    <test started-at="2025-06-23T21:13:06 IST" name="Default test" finished-at="2025-06-23T21:13:35 IST" duration-ms="28976">
       <class name="pageTestClass.LoginPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:pageTestClass.LoginPageTest@741a8937]" started-at="2025-06-18T12:57:22 IST" name="setup" finished-at="2025-06-18T12:57:29 IST" duration-ms="6636" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:pageTestClass.LoginPageTest@74751b3]" started-at="2025-06-23T21:13:06 IST" name="setup" finished-at="2025-06-23T21:13:12 IST" duration-ms="5986" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="invalidUsername()[pri:1, instance:pageTestClass.LoginPageTest@741a8937]" started-at="2025-06-18T12:57:29 IST" name="invalidUsername" finished-at="2025-06-18T12:57:31 IST" duration-ms="1952" status="PASS">
+        <test-method signature="invalidUsername()[pri:1, instance:pageTestClass.LoginPageTest@74751b3]" started-at="2025-06-23T21:13:12 IST" name="invalidUsername" finished-at="2025-06-23T21:13:14 IST" duration-ms="1705" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidUsername -->
-        <test-method signature="invalidpassword()[pri:2, instance:pageTestClass.LoginPageTest@741a8937]" started-at="2025-06-18T12:57:31 IST" name="invalidpassword" finished-at="2025-06-18T12:57:31 IST" duration-ms="731" status="PASS">
+        <test-method signature="invalidpassword()[pri:2, instance:pageTestClass.LoginPageTest@74751b3]" started-at="2025-06-23T21:13:14 IST" name="invalidpassword" finished-at="2025-06-23T21:13:14 IST" duration-ms="645" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidpassword -->
-        <test-method signature="emptyusername()[pri:3, instance:pageTestClass.LoginPageTest@741a8937]" started-at="2025-06-18T12:57:31 IST" name="emptyusername" finished-at="2025-06-18T12:57:32 IST" duration-ms="639" status="PASS">
+        <test-method signature="emptyusername()[pri:3, instance:pageTestClass.LoginPageTest@74751b3]" started-at="2025-06-23T21:13:14 IST" name="emptyusername" finished-at="2025-06-23T21:13:15 IST" duration-ms="667" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emptyusername -->
-        <test-method signature="emptypassword()[pri:4, instance:pageTestClass.LoginPageTest@741a8937]" started-at="2025-06-18T12:57:32 IST" name="emptypassword" finished-at="2025-06-18T12:57:33 IST" duration-ms="621" status="PASS">
+        <test-method signature="emptypassword()[pri:4, instance:pageTestClass.LoginPageTest@74751b3]" started-at="2025-06-23T21:13:15 IST" name="emptypassword" finished-at="2025-06-23T21:13:16 IST" duration-ms="550" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emptypassword -->
-        <test-method signature="emptyusernameandpassword()[pri:5, instance:pageTestClass.LoginPageTest@741a8937]" started-at="2025-06-18T12:57:33 IST" name="emptyusernameandpassword" finished-at="2025-06-18T12:57:33 IST" duration-ms="631" status="PASS">
+        <test-method signature="emptyusernameandpassword()[pri:5, instance:pageTestClass.LoginPageTest@74751b3]" started-at="2025-06-23T21:13:16 IST" name="emptyusernameandpassword" finished-at="2025-06-23T21:13:16 IST" duration-ms="546" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emptyusernameandpassword -->
-        <test-method signature="UsernameandpasswordCaseSensitive()[pri:6, instance:pageTestClass.LoginPageTest@741a8937]" started-at="2025-06-18T12:57:33 IST" name="UsernameandpasswordCaseSensitive" finished-at="2025-06-18T12:57:34 IST" duration-ms="750" status="PASS">
+        <test-method signature="UsernameandpasswordCaseSensitive()[pri:6, instance:pageTestClass.LoginPageTest@74751b3]" started-at="2025-06-23T21:13:16 IST" name="UsernameandpasswordCaseSensitive" finished-at="2025-06-23T21:13:17 IST" duration-ms="664" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UsernameandpasswordCaseSensitive -->
-        <test-method signature="SqlInjection()[pri:7, instance:pageTestClass.LoginPageTest@741a8937]" started-at="2025-06-18T12:57:34 IST" name="SqlInjection" finished-at="2025-06-18T12:57:35 IST" duration-ms="681" status="PASS">
+        <test-method signature="SqlInjection()[pri:7, instance:pageTestClass.LoginPageTest@74751b3]" started-at="2025-06-23T21:13:17 IST" name="SqlInjection" finished-at="2025-06-23T21:13:18 IST" duration-ms="706" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SqlInjection -->
-        <test-method signature="vaildCredentials()[pri:8, instance:pageTestClass.LoginPageTest@741a8937]" started-at="2025-06-18T12:57:35 IST" name="vaildCredentials" finished-at="2025-06-18T12:57:36 IST" duration-ms="683" status="PASS">
+        <test-method signature="vaildCredentials()[pri:8, instance:pageTestClass.LoginPageTest@74751b3]" started-at="2025-06-23T21:13:18 IST" name="vaildCredentials" finished-at="2025-06-23T21:13:19 IST" duration-ms="914" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vaildCredentials -->
-        <test-method signature="LodingPagetime()[pri:9, instance:pageTestClass.LoginPageTest@741a8937]" started-at="2025-06-18T12:57:36 IST" name="LodingPagetime" finished-at="2025-06-18T12:57:41 IST" duration-ms="5018" status="FAIL">
+        <test-method signature="LodingPagetime()[pri:9, instance:pageTestClass.LoginPageTest@74751b3]" started-at="2025-06-23T21:13:19 IST" name="LodingPagetime" finished-at="2025-06-23T21:13:24 IST" duration-ms="5026" status="FAIL">
           <exception class="org.testng.internal.thread.ThreadTimeoutException">
             <message>
               <![CDATA[Method pageTestClass.LoginPageTest.LodingPagetime() didn't finish within the time-out 5000]]>
@@ -69,7 +69,7 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at pageObjectModel.LoginPage.loginbuttondisplayed(LoginPage.java:37)
+at pageObjectModel.LoginPage.loginbuttondisplayed(LoginPage.java:36)
 at pageTestClass.LoginPageTest.LodingPagetime(LoginPageTest.java:73)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -87,11 +87,11 @@ at java.base/java.lang.Thread.run(Thread.java:1575)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LodingPagetime -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:pageTestClass.LoginPageTest@741a8937]" started-at="2025-06-18T12:57:53 IST" name="teardown" finished-at="2025-06-18T12:57:54 IST" duration-ms="682" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:pageTestClass.LoginPageTest@74751b3]" started-at="2025-06-23T21:13:24 IST" name="teardown" finished-at="2025-06-23T21:13:35 IST" duration-ms="11264" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- pageTestClass.LoginPageTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
