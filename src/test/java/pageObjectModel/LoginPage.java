@@ -42,9 +42,6 @@ public class LoginPage extends BaseClass {
 		loginbutton();
 	}
 
-	public String getpageurl() {
-		String Url = driver.getCurrentUrl();
-		return Url;
-	}
+	
 
 }

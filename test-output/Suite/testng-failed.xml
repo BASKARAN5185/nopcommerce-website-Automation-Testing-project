@@ -6,13 +6,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="pageTestClass.LoginPageTest">
+      <class name="pageTestClass.RegistrationPageTest">
         <methods>
           <include name="teardown"/>
-          <include name="LodingPagetime"/>
           <include name="setup"/>
+          <include name="Registerformfilling"/>
         </methods>
-      </class> <!-- pageTestClass.LoginPageTest -->
+      </class> <!-- pageTestClass.RegistrationPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

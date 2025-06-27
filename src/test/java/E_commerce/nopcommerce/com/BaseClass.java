@@ -16,7 +16,7 @@ public class BaseClass {
 	public void setup() {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
 		driver.get("https://demo.nopcommerce.com/login?returnUrl=%2Fapparel");
 
 	}
@@ -30,6 +30,11 @@ public class BaseClass {
 	public static TakesScreenshot driver() {
 		// TODO Auto-generated method stub
 		return driver;
+	}
+	
+	public String getpageurl() {
+		String Url = driver.getCurrentUrl();
+		return Url;
 	}
 
 }

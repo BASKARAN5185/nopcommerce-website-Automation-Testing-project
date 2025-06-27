@@ -102,10 +102,24 @@ public class RegisterPage extends BaseClass {
 
 	}
 
-	public boolean newletters(String letters) {
+	public boolean newletters() {
 		WebElement news = driver.findElement(Newsletter);
 		news.click();
 		return news.isSelected();
+
+	}
+
+	public void fullFormRegistaration(String gender, String firstName, String LastName, String Mail, String companyName,
+			String pass, String Confirmpass) {
+		gender(gender);
+		firstname(firstName);
+		lastname(LastName);
+		mail(Mail);
+		companyName(companyName);
+		password(pass);
+		confirmpass(Confirmpass);
+		newletters();
+		registerButtonClick();
 
 	}
 

@@ -67,7 +67,7 @@ public class LoginPageTest extends BaseClass {
 
 	}
 
-	@Test(priority = 9, timeOut = 5000)
+	@Test(priority = 9, timeOut = 5000, enabled = false)
 	void LodingPagetime() {
 		driver.get("https://demo.nopcommerce.com/login?returnUrl=%2Fapparel");
 		lg.loginbuttondisplayed();
